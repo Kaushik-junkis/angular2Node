@@ -9,7 +9,6 @@ const api = require('./server/routes/api');
 
 const app = express();
 
-//for browser
 // Parsers for POST data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -31,6 +30,7 @@ app.use('/api', api);
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
+  console.log("Test");
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
