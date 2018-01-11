@@ -10,7 +10,8 @@
     "test": "ng test",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor",
-    "build": "ng build && node server.js"	
+    "build": "ng build && node server.js"
+    
   },
   "private": true,
   "dependencies": {
