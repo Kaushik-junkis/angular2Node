@@ -9,7 +9,7 @@ const api = require('./server/routes/api');
 
 const app = express();
 
-// Parsers for POST data
+// Parsers for POST data for browser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(function(req, res, next) { //allow cross origin requests
