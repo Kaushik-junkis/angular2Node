@@ -12,7 +12,6 @@
 /.idea
 /.vscode
 .project
-/src/app/index.ts
 .classpath
 *.launch
 .settings/
